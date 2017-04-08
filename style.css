@@ -5,6 +5,7 @@
     background:linear-gradient(to right, #A5A49B, #7E848A );
     font-size: 10px;
     top:0;
+    z-index:1000;
 }
 #header-logotipe{
 align:center;
@@ -12,13 +13,16 @@ align:center;
 #container-slider{
     position:relative;
     width:3900px;
-    left: 0px;
+    /*left: 0px;*/
 }
 #slide-wrapper{
-    width: 1300px;
+    /*width: 1300px;*/
+    width:100%;
     height: 700px;
+    /*height: auto;*/
     overflow: hidden;
     margin-top:40px;
+    position:relative;
 }
 .nav-content{
     text-align:center;
@@ -33,24 +37,29 @@ align:center;
 .slider-content{
     float: left;
     width: 1300px;
-    height: 700px;
+    height: 600px;
+    /*height:auto;*/
     white-space:normal;
 }
 #slide1{
-    background-color:red;
+    background-image: url(images/slide1.jpg);
 }
 #slide2{
-    background-color: aqua;
+    background-image: url(images/slide2.jpg);
 }
 #slide3{
-    background-color: chocolate;
+    background-image: url(images/slide3.jpg);
 }
 
-/*#prevSlide{*/
-    /*align:left;*/
-/*}*/
-/*#next-slide{*/
-    /*position: absolute;*/
-    /*top:70px;*/
-    /*left: 30px;*/
-/*}*/
+#prevSlide{
+    position: absolute;
+    top:200px;
+    left: 30px;
+    z-index: 300;
+}
+#next-slide{
+    position: absolute;
+    top:200px;
+    left: 1100px;
+    z-index: 300;
+}
