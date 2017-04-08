@@ -11,18 +11,19 @@ var activeLink = 'slide1';
 // var sliderContent = document.getElementById('slider-content');
 // sliderContent.style.width = document.documentElement.clientWidth+'px';
 // alert(sliderContent.style.width);
-var timer = setInterval(nextSlideHandler, 3000);//слайд меняется на следующий каждые 3 с
-
+var interval = setInterval(nextSlideHandler, 3000);//слайд меняется на следующий каждые 3 с
+var timeout;
    btnPrev.addEventListener('click', prevSlideHandler, false);
    btnNext.addEventListener('click', nextSlideHandler, false);
    btnNext.addEventListener('click', clearInt, false);
    btnPrev.addEventListener('click', clearInt, false);
 
    function clearInt(){
-      clearInterval(timer);
-      setTimeout(f, 5000);
+      clearInterval(interval);
+      clearTimeout(timeout);
+      timeout = setTimeout(f, 5000);
       function f(){//получается, что эта функция обрабатывается в любом случае
-      timer = setInterval(nextSlideHandler, 3000);
+      interval = setInterval(nextSlideHandler, 3000);
       }
    }
 
@@ -44,7 +45,6 @@ var timer = setInterval(nextSlideHandler, 3000);//слайд меняется н
             var position = slide1.getAttribute("data-pos");
             containerSlider.style.left = position;
       }
-
    }
 
    function prevSlideHandler(){
