@@ -118,10 +118,14 @@ align:center;
     height: 3px ;
     background-color : #ffe600 ;
 }
+.services-options-content{
+    position:relative;
+}
 .services-options-logotype{
     width : 106px ;
     height : 107px ;
     border-radius: 50%;
+    position:absolute;
 }
 .img-content{
     align:center;
