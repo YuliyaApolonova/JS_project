@@ -68,3 +68,26 @@ var timeout;
       }
    }
 
+var brandSlide1 = document.getElementById('brand-slide1');
+var brandSlide2 = document.getElementById('brand-slide2');
+var containerBrandSlider = document.getElementById('container-brand-slider');
+var activeBrandSlide = 'brandSlide1';
+
+function nextBrandSlideHandler(){
+
+   switch(activeBrandSlide){
+      case 'brandSlide1':
+         activeBrandSlide = 'brandSlide2';
+         var position = brandSlide2.getAttribute("data-pos");
+         containerBrandSlider.style.left = position;
+// console.log("position", position);
+         break;
+      case 'brandSlide2':
+         activeBrandSlide = 'brandSlide1';
+         var position = brandSlide1.getAttribute("data-pos");
+         containerBrandSlider.style.left = position;
+// console.log("position", position);
+         break;
+   }
+}
+var brandInterval = setInterval(nextBrandSlideHandler, 4000);//слайд меняется на следующий каждые 4 с

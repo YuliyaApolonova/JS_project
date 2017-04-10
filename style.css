@@ -415,6 +415,41 @@ align:center;
     margin-right:20px;
     margin-top: 70px;
 }
+#brand-slider {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+.brand-slide {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#brand-slider .container-slider {
+    -webkit-transition: left .4s;
+    -moz-transition: left .4s;
+    -ms-transition: left .4s;
+    -o-transition: left .4s;
+    transition: left .4s;
+    position:relative;
+    width: 200%;
+    height: 100%;
+    margin:auto;
+}
+#brand-slider .brand-wrapper{
+    height:100%;
+    width: 25%;
+    padding: 10px 0;
+    float: left;
+}
+#brand-slider .brand {
+    width:100%;
+    height: auto;
+    margin: auto;
+}
+
 #feedback{
     height: 660px;
     background-color: rgba(19, 19, 22, 0.8);
@@ -441,4 +476,10 @@ textarea{
 }
 .form-textarea{
     margin-top:10px;
+}
+
+#footer{
+    height: 179px;
+    background-color: #131316;
+    width:100%;
 }
