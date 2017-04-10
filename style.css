@@ -6,6 +6,7 @@
     font-size: 10px;
     top:0;
     z-index:1000;
+    opacity: 0.7;
 }
 #header-logotype{
 align:center;
@@ -89,7 +90,6 @@ align:center;
 }
 #services-container{
     width:100%;
-    height: 590px;
 }
 .h3-caption{
     font-family : Oswald ;
@@ -97,6 +97,7 @@ align:center;
     font-size : 16px ;
     font-weight : 400 ;
     text-align:center;
+    text-transform: uppercase;
 }
 .h1-caption{
     font-family : Oswald ;
@@ -104,6 +105,7 @@ align:center;
     font-size : 30px ;
     font-weight : 700 ;
     text-align:center;
+    text-transform: uppercase;
 }
 .text{
     font-family : Oswald ;
@@ -124,14 +126,148 @@ align:center;
 .services-options-content{
     position:relative;
 }
-.services-options-logotype{
-    width : 106px ;
-    height : 107px ;
-    border-radius: 50%;
-    position:absolute;
+#services-description{
+    padding-bottom: 20px;
 }
-.img-content{
-    align:center;
+.logotype{
+    transition: all .1s;
+    margin:auto;
+    z-index: 100;
+    text-align: center;
+    height:10vw;
+    width: 10vw;
+    line-height:10vw;
+    background-color: #ffe600;
+    border-radius: 50%;
+    font-size:2.5em;
+}
+.logotype .icon{
+    color: white;
+}
+
+#services-container .definition {
+    padding: 20px 0;
+    text-align: center;
+}
+
+#flow {
+    margin-top: 50px;
+    background-color: #131A1D;
+}
+#flow .definition {
+    padding:0;
+}
+#flow .h1-caption {
+    color: #ffe600;
+}
+
+#flow .flow-logotype {
+    background-color: transparent;
+    height:6vw;
+    width: 10vw;
+    transition: all .1s;
+    margin:auto;
+    z-index: 100;
+    text-align: center;
+    line-height:6vw;
+    border-radius: 50%;
+}
+#flow .flow-logotype .flow-icon {
+    transition: all .1s;
+    font-size:2.5em;
+    color: #ffe600;
+}
+#flow .h3-caption {
+    color:white;
+    font-weight: bold;
+}
+#flow p {
+    color: rgba(255,255,255,.7);
+}
+#flow .flow-content {
+    padding-bottom: 10px;
+}
+
+#about .about-logotype {
+    transition: all .1s;
+    margin:auto;
+    z-index: 100;
+    text-align: center;
+    background-color: #ffe600;
+    border-radius: 50%;
+    height: 5vw;
+    width: 5vw;
+    font-size:2.5em;
+    line-height: 5vw;
+    color: white;
+    margin-top: 20px;
+}
+
+#about .about-container {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#about .about-container .h3-caption,
+#about .about-container p {
+    text-align: left;
+}
+
+
+
+
+
+@media(max-width:400px) {
+    .logotype{
+        transition: all .1s;
+        margin:auto;
+        z-index: 100;
+        text-align: center;
+        height:18vw;
+        width: 18vw;
+        line-height:20vw;
+        background-color: #ffe600;
+        border-radius: 50%;
+        font-size:2em;
+    }
+    #flow .flow-logotype {
+        height:6vw;
+        width: 15vw;
+        line-height:6vw;
+    }
+    #flow .flow-logotype .flow-icon {
+        font-size:2em;
+    }
+    #about .about-logotype{
+        height: 20vw;
+        width: 20vw;
+        font-size:2.5em;
+        line-height: 20vw;
+        margin-top: 20px;
+    }
+}
+@media (min-width:321px) and (max-width: 688px) {
+    #about .about-logotype{
+        height: 10vw;
+        width: 10vw;
+        font-size:2.5em;
+        line-height: 10vw;
+        margin-top: 10px;
+    }
+}
+@media (min-width:689px) and (max-width: 993px) {
+    #about .about-logotype{
+        height: 7vw;
+        width: 7vw;
+        font-size: 2.5em;
+        line-height: 7vw;
+        margin-top: 10px;
+    }
+}
+
+
+.percent {
+    color: #ffe600;
 }
 .portfolio-img{
     width : 100%;
@@ -231,4 +367,78 @@ align:center;
     height: 400px;
     background-color : rgba(19, 19, 22, 0.8);
     color: white;
+}
+
+.h1-caption2{
+    font-family: Oswald;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align:center;
+}
+.h3-caption2{
+    font-family: Oswald;
+    color: #ffe600;
+    font-size: 16px;
+    font-weight: 400;
+    text-align:center;
+}
+.text2{
+    font-family: Oswald;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    text-align:center;
+}
+
+@media(max-width: 992px){
+    .h1-caption2{
+        font-family: Oswald;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 700;
+        text-align:center;
+    }
+    .h1-caption{
+        font-family : Oswald ;
+        color : #000000 ;
+        font-size : 15px ;
+        font-weight : 700 ;
+        text-align:center;
+        text-transform: uppercase;
+    }
+}
+.number-item{
+    border: 2px solid yellow;
+    height:55px;
+    margin-right:20px;
+    margin-top: 70px;
+}
+#feedback{
+    height: 660px;
+    background-color: rgba(19, 19, 22, 0.8);
+}
+.feedback-input{
+    background-color: rgba(19, 19, 22, 0);
+    border: 1px solid white;
+    width:100%;
+    height: 50px;
+    /*margin-right:5px;*/
+}
+#feedback-butt{
+    align:center;
+    width: 204px;
+    height: 58px;
+    background-color: #ffe600;
+}
+textarea{
+    width:100%;
+    height: 222px;
+    background-color: rgba(19, 19, 22, 0);
+    text-align: center;
+
+}
+.form-textarea{
+    margin-top:10px;
 }
