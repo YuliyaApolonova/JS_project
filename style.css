@@ -415,6 +415,9 @@ align:center;
     margin-right:20px;
     margin-top: 70px;
 }
+#our-clients{
+    height:500px;
+}
 #brand-slider {
     width: 100%;
     height: 150px;
@@ -482,4 +485,11 @@ textarea{
     height: 179px;
     background-color: #131316;
     width:100%;
+}
+
+#up-butt{
+    width: 60px;
+    height: 60px;
+    background-color: #ffe600;
+    color:white;
 }
