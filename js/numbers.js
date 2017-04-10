@@ -44,8 +44,10 @@ function numbersHandler(){
          l = l + 100;
          if (i >= 3360) {
             clearInterval(interval2);
+            document.removeEventListener('scroll', numbersHandler);
          }
       }
    }
 }
+
 //один интервал, но разные шаги

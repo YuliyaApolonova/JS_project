@@ -6,10 +6,15 @@
     font-size: 10px;
     top:0;
     z-index:1000;
-    opacity: 0.7;
+    opacity: 0.9;
+}
+@media (max-width: 321px) {
+    #header .col-xs-2 {
+        padding: 0;
+    }
 }
 #header-logotype{
-align:center;
+    align:center;
 }
 #container-slider{
     -webkit-transition: left .4s;
@@ -39,6 +44,7 @@ align:center;
 .header-link{
     color:white;
     cursor:pointer;
+    text-decoration: none;
 }
 .header-link:hover{
     color: yellow;
@@ -153,6 +159,9 @@ align:center;
 #flow {
     margin-top: 50px;
     background-color: #131A1D;
+}
+#flow p {
+    text-align: center;
 }
 #flow .definition {
     padding:0;
@@ -344,7 +353,7 @@ align:center;
 }
 #contact-us{
     text-align:center;
-
+    margin-bottom: 30px;
 }
 #contact-us-down-butt{
     width: 60px;
@@ -364,9 +373,10 @@ align:center;
 }
 #numbers-container{
     width:100%;
-    height: 400px;
-    background-color : rgba(19, 19, 22, 0.8);
+    /*height: 400px;*/
+    background-color : #131A1D;
     color: white;
+    padding-bottom: 30px;
 }
 
 .h1-caption2{
@@ -375,6 +385,7 @@ align:center;
     font-size: 30px;
     font-weight: 700;
     text-align:center;
+    text-transform: uppercase;
 }
 .h3-caption2{
     font-family: Oswald;
@@ -382,6 +393,7 @@ align:center;
     font-size: 16px;
     font-weight: 400;
     text-align:center;
+    text-transform: uppercase;
 }
 .text2{
     font-family: Oswald;
@@ -409,20 +421,61 @@ align:center;
         text-transform: uppercase;
     }
 }
-.number-item{
+.number-item-container {
     border: 2px solid yellow;
-    height:55px;
-    margin-right:20px;
-    margin-top: 70px;
+    height:120px;
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 5px;
 }
-#our-clients{
-    height:500px;
+@media (max-width: 688px) {
+    .number-item-container {
+        border: 2px solid yellow;
+        height:120px;
+        text-align: center;
+        margin: 10px auto;
+    }
+}
+.number-item{
+    font-weight: bold;
+    font-size: 2em;
+    padding-top: 20px;
+}
+.team-member{
+    marhin-top: 30px;
+    margin-right: 10px;
+}
+#team-member-skill{
+    height: 305px;
+    background-color: #131316;
+}
+.team-member-img{
+    width:100%;
+    height: auto;
+    cursor:pointer;
+}
+/*#skills-container{*/
+    /*width:100%;*/
+/*}*/
+#creative-skills{
+    display: block;
+}
+#art-skills, #web-skills, #photo-skills{
+    display:none;
 }
 #brand-slider {
     width: 100%;
     height: 150px;
     overflow: hidden;
     position: relative;
+}
+@media (max-width:321px) {
+	#brand-slider {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+}
 }
 .brand-slide {
     float: left;
@@ -444,22 +497,25 @@ align:center;
 #brand-slider .brand-wrapper{
     height:100%;
     width: 25%;
-    padding: 10px 0;
+    padding: 10px;
     float: left;
 }
 #brand-slider .brand {
     width:100%;
-    height: auto;
+    height: 100%;
     margin: auto;
 }
 
 #feedback{
-    height: 660px;
-    background-color: rgba(19, 19, 22, 0.8);
+    background-color: #131A1D;
+}
+#feedback {
+    color: white;
 }
 .feedback-input{
+    padding-left: 10px;
     background-color: rgba(19, 19, 22, 0);
-    border: 1px solid white;
+    border: 1px solid rgba(255,255,255,.8);
     width:100%;
     height: 50px;
     /*margin-right:5px;*/
@@ -469,12 +525,22 @@ align:center;
     width: 204px;
     height: 58px;
     background-color: #ffe600;
+    font-weight: bold;
+    color:black;
+}
+#feedback .submit-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 textarea{
+    padding-left: 10px;
+    padding-top: 10px;
     width:100%;
     height: 222px;
     background-color: rgba(19, 19, 22, 0);
-    text-align: center;
+    border: 1px solid rgba(255,255,255,.8);
+    /*text-align: center;*/
 
 }
 .form-textarea{
